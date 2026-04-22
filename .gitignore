@@ -1,0 +1,11 @@
+﻿ml/data/
+node_modules/
+venv/
+.venv/
+__pycache__/
+dist/
+build/
+*.zip
+*.rar
+*.log
+.ipynb_checkpoints/
