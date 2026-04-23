@@ -103,7 +103,7 @@ BUFFALO_BREEDS = {
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 MODEL_PATH = os.path.join(BASE_DIR, "models", "Best_Cattle_Breed.h5")
 
-model = tf.keras.models.load_model(MODEL_PATH)
+model = tf.keras.models.load_model(MODEL_PATH, compile=False)
 
 def predict_image(image: Image.Image):
     image = image.resize(IMAGE_SIZE)
